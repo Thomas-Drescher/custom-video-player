@@ -19,7 +19,8 @@ function updateButton() {
   toggle.textContent = icon;
 }
 function skip() {
-  console.log('skipping');
+  console.log(this.dataset.skip);
+  video.currentTime += parseFloat(this.dataset.skip);
 }
 
 
